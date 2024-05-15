@@ -31,7 +31,7 @@ h3 {
     padding: 25px;
 }
 h5 {color: black;
-  font-size: 1em;
+    font-size: 1em;
     align-items: center;
     text-decoration: underline;
     padding: 20px;
@@ -51,7 +51,7 @@ p {
     
 }
 .frente img {
-    width: 53%;
+    width: 50%;
     display: block;
     margin: auto;
     border-radius: 50px;
@@ -87,6 +87,7 @@ header nav {
     
    
 }
+
 div a {
     text-decoration: none;
     text-decoration: none;
