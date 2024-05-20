@@ -1,4 +1,6 @@
 
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 body {
    background-color:white; /** fondo del bloque**/
     margin: 0px;
@@ -6,11 +8,20 @@ body {
 
 }
 
+.bungee-spice-regular {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 h1 {
     color: black; /** color de la fuente */
     font-size: 2em; /** tamaño de la fuete*/
     text-align: center; /** alineacion de la fuenta */
     text-decoration: underline; /* subrayado del texto */
+    font-weight: bold;/*negrita en la fuente*/
+    
 }
 h2 {
     background-color: darkgreen;
@@ -34,6 +45,7 @@ h5 {color: black;
     font-size: 1em;
     align-items: center;
     text-decoration: underline;
+    font-weight: bold; 
     padding: 20px;
     
 }
@@ -88,7 +100,7 @@ header nav {
    
 }
 
-div a {
+a {
     text-decoration: none;
     text-decoration: none;
     text-align: center; 
@@ -96,8 +108,12 @@ div a {
     color:black;
     font-size: small;
     font-weight: bold;
-    list-style-type: none;  
+    list-style-type: none;
 }
+   
+a:hover { /*permite dar color al momento de pasar el mouse*/
+ color: gold;
+}    
 
 
 ul{
@@ -105,14 +121,12 @@ ul{
 }
 .VOLVER_INICIO a {
     font-size:small;
+    font-family: "Bungee Spice", sans-serif;
     color:red;
     text-decoration: underline;
     padding-left: 20px;
 }
 
-header a:hover { /*permite dar color al momento de pasar el mouse*/
-color: gold;
-}
 .contenedor-imagen img {
     width: 32%; /* Establece el ancho deseado para las imágenes */
     height: 350px; /* Permite que la altura se ajuste proporcionalmente */
@@ -175,5 +189,4 @@ footer p {
     width: 20%;
     right: 20%; 
 }
-
 
