@@ -24,22 +24,23 @@ h1 {
     
 }
 h2 {
-    background-color: darkgreen;
-    color:white;
+    
+    color:#000000;
     font-size: 2em;
     text-align: center;
     text-decoration: underline;
     padding: 30px; 
-    margin: 0;
+    font-weight: bolder;
+   
 }
 
 h3 { 
-    background-color: darkgreen;
-    color:white;
+    color:#000000;
     font-size: 2em;
     text-align: center;
     text-decoration: underline;
     padding: 25px;
+    font-weight: bolder;
 }
 h5 {color: black;
     font-size: 1em;
@@ -189,4 +190,31 @@ footer p {
     width: 20%;
     right: 20%; 
 }
+/* Media Queries */
 
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 20px 0;
+    }
+}
+
+/* Para tabletas y pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+    
+    nav a {
+        padding: 10px 15px;
+    }
+}
