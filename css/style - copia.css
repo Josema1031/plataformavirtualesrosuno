@@ -194,7 +194,7 @@ footer p {
 /* Media Queries */
 
 /* Para dispositivos móviles */
-@media (max-width: 768px) {
+@media sceer(max-width: 768px) {
     nav {
         flex-direction: column;
         text-align: center;
