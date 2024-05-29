@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import "titulo-subtitulo.scss";
+@import "header.scss";
+@import "imagenes.scss";
+@import "footer.scss";
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+p{font-size: 1.2em;
+    text-align: justify;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+a{text-decoration: none;
+    text-align: center;
+    padding: 3px;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+a:hover {
+    color: gold;  }
+
+ul{list-style-type: none;
+
+}
+
+
+
+.VOLVER_INICIO a {
+    font-size: small;
+    font-family: "Bungee Spice", sans-serif;
+    color: red;
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+
+
+
+iframe {
+    width: 32%;
+    padding: 7px;
+}
+
+.mapa iframe {
+    width: 80%;
+    border-radius: 50px;
+    display: flex;
+    margin: 0 auto;
+}
+
+

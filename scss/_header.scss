@@ -1,0 +1,22 @@
+header img {
+    margin: 0;
+    padding: 10px 20px;
+    width: 8%;
+    right: 8%;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar {
+    background-color: darkgreen;
+    position: sticky;
+    top: 0; }
+
+.contenedor-imagen img {
+    width: 32%; /* Establece el ancho deseado para las imágenes */
+    height: 350px; /* Permite que la altura se ajuste proporcionalmente */
+    padding: 7px;
+}
