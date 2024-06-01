@@ -1,7 +1,16 @@
 @charset "UTF-8";
+/**GOOGLE FONTS**/
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: black;
+  font-weight: bold;
   font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -38,14 +47,15 @@ h5 {
 header img {
   margin: 0;
   padding: 10px 20px;
-  width: 8%;
-  right: 8%;
+  width: 10%;
+  right: 10%;
 }
 
 header .container {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   align-items: center;
+  margin:0;
 }
 
 .navbar {
@@ -54,27 +64,13 @@ header .container {
   top: 0;
 }
 
-.contenedor-imagen img {
-  width: 32%; /* Establece el ancho deseado para las imágenes */
-  height: 350px; /* Permite que la altura se ajuste proporcionalmente */
-  padding: 7px;
-}
-
-.frente img {
-  width: 50%;
-  display: block;
-  margin: auto;
-  border-radius: 50px;
-}
-
-.IMAGEN_PIE img {
-  position: absolute;
+/**.IMAGEN_PIE img {
+  position:fixed;
   bottom: 0;
   left: 35%;
-  border-radius: 100px;
   width: 30%;
   right: 20%;
-}
+}**/
 
 .pie_pagina img {
   position: relative;
@@ -107,11 +103,7 @@ footer p {
   font-weight: bold;
 }
 
-body {
-  background-color: white;
-  margin: 0;
-  padding: 0;
-}
+
 
 p {
   font-size: 1.2em;
@@ -160,4 +152,173 @@ iframe {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Estilos para pantallas grandes */
+body {
+  font-size: 16px;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Tarjeta individual */
+.card {
+  width: 18rem;
+  height: 25rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  width: 72%;
+  height: auto;
+  margin: auto;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 15px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+/* Botón de la tarjeta */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: green;
+  }
+  .IMAGEN_PIE img {
+    background-color: green;
+    color: green;
+    position:relative;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    right: 20%;
+  }
+  
+header img {
+  margin: 0;
+  padding: 10px 20px;
+  width: 8%;
+  right: 8%;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar {
+  background-color: darkgreen;
+  position: sticky;
+  top: 0;
+}
+
+  
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {  
+  body {
+    font-size: 12px;
+    background-color:white;
+  }
+  header { display: flex;
+    flex-direction:column;
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+   .card {
+    width: 70%;
+    height: auto;
+  }
+  .IMAGEN_PIE img {
+    position:relative;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    right: 20%;
+  }
+  h2 {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    padding-top:0;
+    font-weight: bolder;
+    margin: 10px;
+  }
+  h5 {
+    color: black;
+    font-size: 1em;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .navbar {
+    background-color: green;
+    position: sticky;
+    top: 0;
+  }
+  header .container {
+    display:inline-block;
+    flex-direction:row;
+    align-items:center;
+  }
+  a {
+  text-decoration: none;
+  text-align: center;
+  padding: 3px;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+a:hover {
+  color: gold;
+}
+  
+}
