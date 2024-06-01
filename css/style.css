@@ -207,8 +207,15 @@ body {
   font-size: 1rem;
 }
 
-.btn-primary {
-  background-color: #007bff;
+.videos-ilustrativos{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.videos-ilustrativos iframe {
+  width: 400px;
+  height: 250px;
 }
 
 /* Estilos para pantallas medianas */
@@ -319,6 +326,11 @@ header .container {
 
 a:hover {
   color: gold;
+}
+
+.mapa iframe{
+  width: 70%;
+  height: 80%;
 }
   
 }
