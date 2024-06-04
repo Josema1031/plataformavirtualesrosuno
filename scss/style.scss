@@ -5,9 +5,12 @@
 @import "footer.scss";
 @import "enlace-texto.scss";
 @import "reponsive.scss";
+@import "cards.scss";
+@import "video.scss";
+
 
 body {
-    background-color: white;
+    background-color:white;
     margin: 0;
     padding: 0;
 }
@@ -30,5 +33,6 @@ iframe {
     display: flex;
     margin: 0 auto;
 }
+
 
 
