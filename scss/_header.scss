@@ -8,16 +8,14 @@ header img {
 header .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;   
 }
 .navbar {
    
-    background-color: darkgreen;
-    position: sticky;
-    top: 0; }
-
-
+    background-image: linear-gradient(to left,#017F2A   ,#A9D300);
+    top: 0; 
+    border-bottom: 3px solid green;
+}
 .contenedor-imagen img {
     width: 100px; /* Establece el ancho deseado para las imágenes */
     height: 350px; /* Permite que la altura se ajuste proporcionalmente */

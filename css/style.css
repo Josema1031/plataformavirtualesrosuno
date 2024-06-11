@@ -7,6 +7,9 @@ h1 {
   text-align: center;
   text-decoration: underline;
   font-weight: bolder;
+  margin: 30px 0 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -14,7 +17,7 @@ h2 {
   font-size: 2em;
   text-align: center;
   text-decoration: underline;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-weight: bolder;
 }
@@ -51,9 +54,9 @@ header .container {
 }
 
 .navbar {
-  background-color: darkgreen;
-  position: sticky;
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
   top: 0;
+  border-bottom: 3px solid green;
 }
 
 .contenedor-imagen img {
@@ -63,7 +66,7 @@ header .container {
 }
 
 .frente img {
-  width: 50%;
+  width: 70%;
   display: block;
   margin: auto;
   border-radius: 50px;
@@ -100,7 +103,7 @@ header .container {
 }
 
 footer p {
-  background-color: whitesmoke;
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
   font-size: smaller;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -178,6 +181,12 @@ ul {
   header {
     display: flex;
     flex-direction: column;
+  }
+  header img {
+    margin: 0;
+    padding: 10px 20px;
+    width: 50%;
+    right: 50%;
   }
   h1 {
     font-weight: bold;
@@ -296,6 +305,7 @@ ul {
   background-color: #0056b3;
 }
 
+/*animacion en las card*/
 .card:hover {
   transform: perspective(300px) rotateX(10deg) translateY(-5%) translateZ(0);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -320,10 +330,43 @@ ul {
   height: 235px;
 }
 
+.grid-conteiner-actuaciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 250px 50px;
+  gap: 5px;
+  padding-bottom: 0;
+}
+
+.grid-conteiner-intrucciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 50px;
+  gap: 5px;
+  padding-bottom: 0;
+}
+
+/** esto es el codigo de la introduccion**/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
+}
+
+.grid-item {
+  padding: 5px;
+}
+
+/* Diseño para pantallas medianas: 1 columna */
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna */
+  }
+}
 body {
-  background-color: white;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
 }
 
 .VOLVER_INICIO a {
@@ -341,7 +384,7 @@ iframe {
 
 .mapa iframe {
   width: 80%;
-  border-radius: 50px;
+  border-radius: 30px;
   display: flex;
   margin: 0 auto;
 }

@@ -7,12 +7,14 @@
 @import "reponsive.scss";
 @import "cards.scss";
 @import "video.scss";
+@import "grid.scss";
 
 
 body {
-    background-color:white;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to left,#017F2A   ,#A9D300);
+
 }
 .VOLVER_INICIO a {
     font-size: small;
@@ -29,10 +31,7 @@ iframe {
 
 .mapa iframe {
     width: 80%;
-    border-radius: 50px;
+    border-radius: 30px;
     display: flex;
     margin: 0 auto;
 }
-
-
-
